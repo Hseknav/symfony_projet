@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 13 sep. 2017 à 11:51
+-- Généré le :  mer. 13 sep. 2017 à 14:42
 -- Version du serveur :  10.1.25-MariaDB
 -- Version de PHP :  7.1.7
 
@@ -40,13 +40,9 @@ CREATE TABLE `toon` (
 --
 
 INSERT INTO `toon` (`id`, `name`, `gender`, `age`) VALUES
-(1, 'test', 'Homme', 14),
-(2, 'haha', 'Homme', 15),
-(3, '123', 'Homme', 14),
-(4, '2222', 'Homme', 2222),
-(5, '5555', 'Femme', 555),
-(6, 'Fadi', 'Homme', 33),
-(7, 'Thomas', 'Homme', 32);
+(12, 'Thor', 'Homme', 35),
+(13, 'Spiderman', 'Homme', 30),
+(14, 'Wonder Woman', 'Femme', 25);
 
 -- --------------------------------------------------------
 
@@ -65,7 +61,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(2, 'admin', '$2y$13$MpxogE407ZmJU9mNWpzC/O4uZbpk2ln00Pqve7imd8Jd9dl06orCy');
+(15, 'admin', '$2y$13$mIbA5GQ7RqyWr5ewzl4cEuc3AGiLFHgU5yMRArH3.sZjysTUCJBjq'),
+(16, 'user', '$2y$13$TkHcJWI.CdmLUKWDkvFhKOMF6KpIk7DdA4GnhYm3PlCuI4SF1gaoq');
 
 --
 -- Index pour les tables déchargées
@@ -93,12 +90,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `toon`
 --
 ALTER TABLE `toon`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
