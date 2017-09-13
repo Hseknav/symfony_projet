@@ -1,0 +1,27 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Toons:index{% endblock %}
+
+{% block body %}
+    <h1 style="text-align: center">Voici la liste des personnages Marvel:</h1>
+    <div class="bs-example" data-example-id="bordered-table">
+        <table class="table table-bordered" style="text-align: center">
+            <thead>
+            <tr>
+                <th style="text-align: center">Nom</th>
+                <th style="text-align: center">Genre</th>
+                <th style="text-align: center">Age</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for toon in toons %}
+                <tr>
+                    <td>{{ toon.name }}</td>
+                    <td>{{ toon.gender }}</td>
+                    <td>{{ toon.age }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
