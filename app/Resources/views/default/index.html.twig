@@ -6,7 +6,7 @@
         {% if not is_granted('IS_AUTHENTICATED_FULLY')  %}
             <p>Veuillez vous connecter ou vous inscrire afin d'ajouter des personnages Marvel !!</p>
             <p>
-                <a class="btn btn-lg btn-primary" href="{{ path('login') }}" role="button">Connection &raquo;</a>
+                <a class="btn btn-lg btn-primary" href="{{ path('login') }}" role="button">Connexion &raquo;</a>
                 <a class="btn btn-lg btn-info" href="{{ path('register') }}" role="button">Inscription &raquo;</a>
             </p>
         {% endif %}
